@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>狼堡</title>
+  <title>Chase&#39;s Blog</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-07-16T12:25:05.213Z</updated>
+  <updated>2024-07-18T11:39:45.131Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,11 +21,18 @@
     <link href="http://example.com/2024/07/16/CS50P-0-Functions-Variables/"/>
     <id>http://example.com/2024/07/16/CS50P-0-Functions-Variables/</id>
     <published>2024-07-16T11:26:48.000Z</published>
-    <updated>2024-07-16T12:25:05.213Z</updated>
+    <updated>2024-07-18T11:39:45.131Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;interactive mode&lt;/p&gt;
-&lt;p&gt;注：单引号和双引号在python中有同样的作用&lt;/p&gt;</summary>
+&lt;p&gt;注：单引号和双引号在python中有同样的作用&lt;/p&gt;
+&lt;h2 id=&quot;functions&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#functions&quot;&gt;&lt;/a&gt;</summary>
+        
+      
     
     
     
@@ -37,37 +44,18 @@
   </entry>
   
   <entry>
-    <title>常微分方程</title>
-    <link href="http://example.com/2024/07/16/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
-    <id>http://example.com/2024/07/16/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</id>
-    <published>2024-07-16T02:15:49.000Z</published>
-    <updated>2024-07-16T12:24:55.016Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;em&gt;规定 $&#92;int{p(x)&#92;mathrm{d}x}$ 不含 $C$​&lt;/em&gt; &lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="数学分析" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://example.com/2024/07/16/hello-world/"/>
     <id>http://example.com/2024/07/16/hello-world/</id>
     <published>2024-07-16T01:09:42.593Z</published>
-    <updated>2024-07-16T12:19:44.739Z</updated>
+    <updated>2024-07-18T11:28:58.137Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;p&gt;Welcome to &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/&quot; &gt;Hexo&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;! This is</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     

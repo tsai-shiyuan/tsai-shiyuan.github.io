@@ -5,23 +5,25 @@
     <url>/2024/07/16/CS50P-0-Functions-Variables/</url>
     <content><![CDATA[<p>interactive mode</p>
 <p>注：单引号和双引号在python中有同样的作用</p>
-<span id="more"></span>
-
-<h2 id="functions"><a href="#functions" class="headerlink" title="functions"></a>functions</h2><p>CLI：command line interface</p>
+<h2 id="functions"><a class="markdownIt-Anchor" href="#functions"></a> functions</h2>
+<p>CLI：command line interface</p>
 <p>GUI：graphical user interface</p>
-<h3 id="print"><a href="#print" class="headerlink" title="print()"></a>print()</h3><p><code>print(&quot;hello, &quot; + name)</code>  连接 <code>+</code></p>
-<p><code>print(&quot;hello,&quot;,name)</code> 多个argument(参数) 输出用 <code>,</code> 隔开，会自动添加空格</p>
-<p><code>print(&quot;hello, world&quot;)</code> 会自动换行（更好的理解：光标移动到下一行）</p>
-<p><code>print(&#39;hello, &quot;friend&quot;&#39;)</code> 引号保持一致可以输出，输出 <code>hello, &quot;friend&quot;</code></p>
-<p><code>print(&quot;hello, \&quot;friend\&quot;&quot;)</code> 转义也可以输出引号</p>
-<h4 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h4><p>Default: </p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(*objects, sep=<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;\n&#x27;</span>, file=sys.stdout, flush=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符串格式化"><a href="#字符串格式化" class="headerlink" title="字符串格式化"></a>字符串格式化</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;hello, <span class="subst">&#123;name&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>字符串前加上 <code>f</code> </p>
-<h2 id="variables"><a href="#variables" class="headerlink" title="variables"></a>variables</h2><p><strong>store the returned values and do something</strong></p>
-<h3 id="str"><a href="#str" class="headerlink" title="str"></a>str</h3><p><code>name = name.strip()</code></p>
+<h3 id="print"><a class="markdownIt-Anchor" href="#print"></a> print()</h3>
+<p><code>print("hello, " + name)</code>  连接 <code>+</code></p>
+<p><code>print("hello,",name)</code> 多个argument(参数) 输出用 <code>,</code> 隔开，会自动添加空格</p>
+<p><code>print("hello, world")</code> 会自动换行（更好的理解：光标移动到下一行）</p>
+<p><code>print('hello, "friend"')</code> 引号保持一致可以输出，输出 <code>hello, "friend"</code></p>
+<p><code>print("hello, \"friend\"")</code> 转义也可以输出引号</p>
+<h4 id="函数参数"><a class="markdownIt-Anchor" href="#函数参数"></a> 函数参数</h4>
+<p>Default:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(*objects, sep=<span class="string">' '</span>, end=<span class="string">'\n'</span>, file=sys.stdout, flush=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="字符串格式化"><a class="markdownIt-Anchor" href="#字符串格式化"></a> 字符串格式化</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f"hello, <span class="subst">{name}</span>"</span>)</span><br></pre></td></tr></table></figure>
+<p>字符串前加上 <code>f</code></p>
+<h2 id="variables"><a class="markdownIt-Anchor" href="#variables"></a> variables</h2>
+<p><strong>store the returned values and do something</strong></p>
+<h3 id="str"><a class="markdownIt-Anchor" href="#str"></a> str</h3>
+<p><code>name = name.strip()</code></p>
 <p>返回移除字符串头尾指定的字符生成的新字符串（默认为空格或换行符）</p>
 <p><code>name = name.capitalize()</code></p>
 <p>Capitalize the very first letter</p>
@@ -32,51 +34,53 @@
 <p><code>first, last = name.split()</code></p>
 <p>按序返回，并能同时赋给左边的变量</p>
 <p><strong>只有函数的返回值是<code>str</code> 时，才能用 <code>.func()</code> 的方式调用</strong></p>
-<h3 id="int"><a href="#int" class="headerlink" title="int"></a>int</h3><h4 id="范围"><a href="#范围" class="headerlink" title="范围"></a>范围</h4><p>在python中，int类型可以无限大</p>
-<h4 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">input</span>(<span class="string">&quot;What&#x27;s x? &quot;</span>)</span><br><span class="line">y = <span class="built_in">input</span>(<span class="string">&quot;What&#x27;s y? &quot;</span>)</span><br><span class="line">z = x + y</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
-
+<h3 id="int"><a class="markdownIt-Anchor" href="#int"></a> int</h3>
+<h4 id="范围"><a class="markdownIt-Anchor" href="#范围"></a> 范围</h4>
+<p>在python中，int类型可以无限大</p>
+<h4 id="加法"><a class="markdownIt-Anchor" href="#加法"></a> 加法</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">input</span>(<span class="string">"What's x? "</span>)</span><br><span class="line">y = <span class="built_in">input</span>(<span class="string">"What's y? "</span>)</span><br><span class="line">z = x + y</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
 <p><code>+</code> 会把 <code>x</code> 字符串和 <code>y</code> 字符串连在一起，那何时做整数加法？修改：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">z = <span class="built_in">int</span>(x) + <span class="built_in">int</span>(y)</span><br></pre></td></tr></table></figure>
-
 <p>由此观之，<code>int</code> 还是一个函数，把输入的字符串 <code>x</code> 变为可以运算的整数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;What&#x27;s x? &quot;</span>))</span><br><span class="line">y = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;What&#x27;s y? &quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(x + y)</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's x? "</span>))</span><br><span class="line">y = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's y? "</span>))</span><br><span class="line"><span class="built_in">print</span>(x + y)</span><br></pre></td></tr></table></figure>
 <p><strong>内层函数的返回值(return value)会作为外层函数的参数(argument)</strong></p>
 <p>所以还可以这样写（但这样会增加阅读难度和犯错概率）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;What&#x27;s x? &quot;</span>)) + <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;What&#x27;s y? &quot;</span>)))</span><br></pre></td></tr></table></figure>
-
-<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><h4 id="四舍五入近似"><a href="#四舍五入近似" class="headerlink" title="四舍五入近似"></a>四舍五入近似</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">round</span>(number[, ndigits])</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's x? "</span>)) + <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's y? "</span>)))</span><br></pre></td></tr></table></figure>
+<h3 id="float"><a class="markdownIt-Anchor" href="#float"></a> float</h3>
+<h4 id="四舍五入近似"><a class="markdownIt-Anchor" href="#四舍五入近似"></a> 四舍五入近似</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">round</span>(number[, ndigits])</span><br></pre></td></tr></table></figure>
 <p>保留成最近的整数，ndigits表示近似到几位</p>
 <p><code>[]</code> 括起来表示括号里面的内容是可以选择写或不写的</p>
-<h4 id="格式化输出：小数位数"><a href="#格式化输出：小数位数" class="headerlink" title="格式化输出：小数位数"></a>格式化输出：小数位数</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;z:<span class="number">.2</span>f&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h4 id="格式化输出：每三位一个逗号"><a href="#格式化输出：每三位一个逗号" class="headerlink" title="格式化输出：每三位一个逗号"></a>格式化输出：每三位一个逗号</h4><p>想输出 <code>1,000,000</code> ？</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;z:,&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h2><h3 id="def"><a href="#def" class="headerlink" title="def"></a>def</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>():		<span class="comment">#()为空表示不接收参数</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)		<span class="comment">#只要有四个缩进就是定义的函数的内容</span></span><br></pre></td></tr></table></figure>
-
+<h4 id="格式化输出小数位数"><a class="markdownIt-Anchor" href="#格式化输出小数位数"></a> 格式化输出：小数位数</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f"<span class="subst">{z:<span class="number">.2</span>f}</span>"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="格式化输出每三位一个逗号"><a class="markdownIt-Anchor" href="#格式化输出每三位一个逗号"></a> 格式化输出：每三位一个逗号</h4>
+<p>想输出 <code>1,000,000</code> ？</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f"<span class="subst">{z:,}</span>"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="自定义函数"><a class="markdownIt-Anchor" href="#自定义函数"></a> 自定义函数</h2>
+<h3 id="def"><a class="markdownIt-Anchor" href="#def"></a> def</h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>():		<span class="comment">#()为空表示不接收参数</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello"</span>)		<span class="comment">#只要有四个缩进就是定义的函数的内容</span></span><br></pre></td></tr></table></figure>
 <p>一个sayhello程序</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">to=<span class="string">&quot;world&quot;</span></span>):	<span class="comment">#给参数一个默认值</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;hello,&quot;</span>,to)</span><br><span class="line"></span><br><span class="line">hello()		<span class="comment">#没有参数argument，就会代入默认的world</span></span><br><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;What&#x27;s your name? &quot;</span>).strip().title()</span><br><span class="line">hello(name)</span><br></pre></td></tr></table></figure>
-
-<h3 id="规范"><a href="#规范" class="headerlink" title="规范"></a>规范</h3><p>先define，再call</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    name = <span class="built_in">input</span>(<span class="string">&quot;What&#x27;s your name? &quot;</span>).strip().title()</span><br><span class="line">    hello(name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">to=<span class="string">&quot;world&quot;</span></span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;hello,&quot;</span>,to)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
-
-<h3 id="scope作用范围"><a href="#scope作用范围" class="headerlink" title="scope作用范围"></a>scope作用范围</h3><p>变量在定义它的函数中起作用（和C差不多）</p>
-<h3 id="return返回值"><a href="#return返回值" class="headerlink" title="return返回值"></a>return返回值</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    x= <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;What&#x27;s x? &quot;</span>))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;x squared is&quot;</span>,square(x))</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">square</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">return</span> n * n</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
-
-<h4 id="ps-乘方运算"><a href="#ps-乘方运算" class="headerlink" title="ps. 乘方运算"></a>ps. 乘方运算</h4><p>例如：计算 <code>n^2</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">to=<span class="string">"world"</span></span>):	<span class="comment">#给参数一个默认值</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello,"</span>,to)</span><br><span class="line"></span><br><span class="line">hello()		<span class="comment">#没有参数argument，就会代入默认的world</span></span><br><span class="line">name = <span class="built_in">input</span>(<span class="string">"What's your name? "</span>).strip().title()</span><br><span class="line">hello(name)</span><br></pre></td></tr></table></figure>
+<h3 id="规范"><a class="markdownIt-Anchor" href="#规范"></a> 规范</h3>
+<p>先define，再call</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    name = <span class="built_in">input</span>(<span class="string">"What's your name? "</span>).strip().title()</span><br><span class="line">    hello(name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">to=<span class="string">"world"</span></span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello,"</span>,to)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<h3 id="scope作用范围"><a class="markdownIt-Anchor" href="#scope作用范围"></a> scope作用范围</h3>
+<p>变量在定义它的函数中起作用（和C差不多）</p>
+<h3 id="return返回值"><a class="markdownIt-Anchor" href="#return返回值"></a> return返回值</h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    x= <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's x? "</span>))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"x squared is"</span>,square(x))</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">square</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">return</span> n * n</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<h4 id="ps-乘方运算"><a class="markdownIt-Anchor" href="#ps-乘方运算"></a> ps. 乘方运算</h4>
+<p>例如：计算 <code>n^2</code></p>
 <p><code>pow(n, 2)</code> 或 <code>n**2</code></p>
-<h2 id="comments"><a href="#comments" class="headerlink" title="comments"></a>comments</h2><p>note for myself</p>
+<h2 id="comments"><a class="markdownIt-Anchor" href="#comments"></a> comments</h2>
+<p>note for myself</p>
 <ul>
 <li>intention</li>
 <li>Posedocode: outline the program in advance(to-do list)</li>
 </ul>
 <p>单行注释：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ...comment</span></span><br></pre></td></tr></table></figure>
-
 <p>多行注释：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">...comment</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">...comment</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>python</category>
@@ -88,86 +92,20 @@
   <entry>
     <title>Hello World</title>
     <url>/2024/07/16/hello-world/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>常微分方程</title>
-    <url>/2024/07/16/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</url>
-    <content><![CDATA[<p><em>规定 $\int{p(x)\mathrm{d}x}$ 不含 $C$​</em> </p>
-<span id="more"></span>
-
-<h2 id="一阶微分方程"><a href="#一阶微分方程" class="headerlink" title="一阶微分方程"></a>一阶微分方程</h2><h3 id="一、变量分离方程"><a href="#一、变量分离方程" class="headerlink" title="一、变量分离方程"></a>一、变量分离方程</h3><p>$$<br>\frac{\mathrm d y}{\mathrm d x}&#x3D;\frac{X(x)}{Y(y)}<br>$$</p>
-<p>解：移项积分 $\int{Y(y)}\mathrm{d}y&#x3D;\int{X(x)}\mathrm{d}x+C$​ </p>
-<h3 id="二、齐次方程"><a href="#二、齐次方程" class="headerlink" title="二、齐次方程"></a>二、齐次方程</h3><p>$$<br>\frac{\mathrm{d}y}{\mathrm{d}x}&#x3D;f(\frac{y}{x})<br>$$</p>
-<p>解: 令 $u&#x3D;\frac{y}{x}$ ，则 $u+\frac{\mathrm{d}u}{\mathrm{d}x}x&#x3D;f(u)$ $\Rightarrow$  $\frac{\mathrm{d}u}{f(u)-u}&#x3D;\frac{\mathrm{d}x}{x}$​</p>
-<p>$$<br>\frac{\mathrm{d}y}{\mathrm{d}x}&#x3D;f(\frac{ax+by+c}{a_1 x+ b_1y+c_1})<br>$$</p>
-<p>解：线性变换，令$<br>\begin{cases}<br>x&#x3D;X+h\<br>y&#x3D;Y+k<br>\end{cases}$ ，<br>右边分式化为 $\frac{a(X+h)+b(Y+k)+c}{a_1(X+h)+b_1(Y+k)+c_1}$ ，令$<br>\begin{cases}<br>ah+bk+c&#x3D;0\<br>a_1h+b_1k+c_1&#x3D;0<br>\end{cases}$</p>
-<p>若 $\left|\begin{array}{cccc}<br>    a &amp;    b     \<br>    a_1 &amp;    b_1  \<br>\end{array}\right| \neq 0$ ，$h,k$ 有解，原方程化为 $\frac{\mathrm{d}Y}{\mathrm{d}X}&#x3D;f(\frac{aX+bY}{a_1 X+ b_1 Y})$ ，再令 $u&#x3D;\frac{Y}{X}$ ，变为可变量分离方程</p>
-<p>若 $\left|\begin{array}{cccc}<br>    a &amp;    b     \<br>    a_1 &amp;    b_1  \<br>\end{array}\right| &#x3D; 0$ ，则 $(a_1,b_1)&#x3D;\lambda (a,b)$ ，令 $u&#x3D;a x+by$ ，原方程化为 $\frac{1}{b}\frac{\mathrm{d}u}{\mathrm{d}x}-\frac{a}{b}&#x3D;f(\frac{u+c}{\lambda u +c_1})$ ，可变量分离</p>
-<h3 id="三、线性方程"><a href="#三、线性方程" class="headerlink" title="三、线性方程"></a>三、线性方程</h3><p>$$<br>\frac{\mathrm{d}y}{\mathrm{d}x}+p(x)y&#x3D;q(x)<br>$$</p>
-<p>(1) $q(x)&#x3D;0$ ，通解为</p>
-<p>$$<br>y&#x3D;Ce^{-\int{p(x)\mathrm{d}x}}<br>$$</p>
-<p>(2) $q(x)\neq 0$ ，常数变易法，令 $C&#x3D;c(x)$ ，代回原方程，得到 $c’(x)&#x3D;q(x)e^{\int{p(x)\mathrm{d}x}}$ ，故通解为</p>
-<p>$$<br>y&#x3D;e^{-\int{p(x)\mathrm{d}x}}(\int{q(x)e^{\int{p(x)\mathrm{d}x}}\mathrm{d}x+C})<br>$$</p>
-<h3 id="四、伯努利方程"><a href="#四、伯努利方程" class="headerlink" title="四、伯努利方程"></a>四、伯努利方程</h3><p>$$<br>\frac{\mathrm{d}y}{\mathrm{d}x}+p(x)y&#x3D;q(x)y^n<br>$$</p>
-<p>当 $n&#x3D;0$ 或 $1$ 时，就是线性方程</p>
-<p>当 $n\neq 0$ 和 $1$ 时，同乘 $y^{-n}$ ，得 $\frac{\mathrm{d}y^{1-n}}{\mathrm{d}x}+p(x)y^{1-n}&#x3D;q(x)$ ，令 $u&#x3D;y^{1-n}$ ，化为线性方程 </p>
-<h3 id="五、全微分方程"><a href="#五、全微分方程" class="headerlink" title="五、全微分方程"></a>五、全微分方程</h3><p><img  
-                       lazyload
-                       alt="image"
-                       data-src="https://img2024.cnblogs.com/blog/3451563/202406/3451563-20240610115640441-183037478.png"
-                       
-                 ></p>
-<h2 id="二阶线性微分方程"><a href="#二阶线性微分方程" class="headerlink" title="二阶线性微分方程"></a>二阶线性微分方程</h2><p>标准形式：<br>$$<br>y’’+p(x)y’+q(x)y&#x3D;f(x)<br>$$<br>一般来说，方程的解不是唯一的，通常会包含两个独立的任意常数</p>
-<h3 id="二阶线性微分方程解的结构"><a href="#二阶线性微分方程解的结构" class="headerlink" title="二阶线性微分方程解的结构"></a>二阶线性微分方程解的结构</h3><h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理 $1.$"></a>定理 $1.$</h4><p>若 $y_1(x), y_2(x)$ 是齐次方程 $y’’+p(x)y’+q(x)y&#x3D;0$ 的解，$c_1,c_2$ 是任意常数，则 $y_1(x)$ 与 $y_2(x)$ 的线性组合 $y(x)&#x3D;c_1 y_1(x)+c_2 y_2(x)$ 也是齐次方程的解。</p>
-<h4 id="定理-2"><a href="#定理-2" class="headerlink" title="定理 $2.$"></a>定理 $2.$</h4><p>若 $y_1(x), y_2(x)$ 是非齐次方程的两个解，则 $y_1(x)-y_2(x)$ 是齐次方程的解。</p>
-<p>若 $y_0(x)$ 是非齐次方程的解，$y(x)$ 是齐次方程的解，则 $y_0(x)+y(x)$ 仍然是非齐次方程的解。</p>
-<p><strong>求出非齐次方程的一个解（称为特解）和齐次方程的通解，就可以得到非齐次方程的通解。</strong></p>
-<h3 id="二阶常系数齐次线性微分方程"><a href="#二阶常系数齐次线性微分方程" class="headerlink" title="二阶常系数齐次线性微分方程"></a>二阶常系数齐次线性微分方程</h3><p>讨论<br>$$<br>y’’+py’+qy&#x3D;0<br>$$<br>的通解：</p>
-<p>令 $y&#x3D;e^{\lambda x}$ ，代入得 $(\lambda ^2+p\lambda +q)e^{\lambda x}&#x3D;0$ ，有<br>$$<br>\lambda ^2+p\lambda +q&#x3D;0<br>$$<br>称这个代数方程为微分方程的特征方程，特征方程的根称为微分方程的特征根</p>
-<ol>
-<li><p>若特征方程有 $2$ 个互异的实特征根 $\lambda_1, \lambda_2$ </p>
-<p>$e^{\lambda_1x},e^{\lambda_2x}$都是方程的解且线性无关。因此，方程的通解为<br>$$<br> y(x)&#x3D;c_1 e^{\lambda_1x}+c_2 e^{\lambda_2x}<br>$$</p>
-</li>
-<li><p>若特征方程有 $1$ 个实特征重根 $\lambda &#x3D; -\frac{p}{2}$ </p>
-<p>显然 $y_1&#x3D;e^{\lambda x}$ 为方程的一个解，计算得另一个解为 $y_2&#x3D;xe^{\lambda x}$ ，所以通解为<br>$$<br> y(x)&#x3D;c_1 e^{\lambda x}+c_2 xe^{\lambda x}<br>$$</p>
-</li>
-<li><p>若特征方程有 $2$ 个共轭的复数特征根</p>
-<p>设 $\lambda_1 &#x3D;\alpha+\beta i,\lambda_2 &#x3D;\alpha-\beta i$ ，通解为<br>$$<br>y(x)&#x3D;e^{\alpha x} (c_1 \cos{\beta x}+c_2 \sin{\beta x})<br>$$</p>
-</li>
-</ol>
-<h3 id="二阶常系数非齐次线性微分方程"><a href="#二阶常系数非齐次线性微分方程" class="headerlink" title="二阶常系数非齐次线性微分方程"></a>二阶常系数非齐次线性微分方程</h3><p>讨论<br>$$<br>y’’+py’+qy&#x3D;f(x)<br>$$<br>的特解，当 $f(x)$ 比较特殊时，可以用常数变易法+待定系数法。</p>
-<h4 id="情况一-f-x-P-m-x-e-mu-x"><a href="#情况一-f-x-P-m-x-e-mu-x" class="headerlink" title="情况一 $f(x)&#x3D;P_m(x)e^{\mu x}$"></a>情况一 $f(x)&#x3D;P_m(x)e^{\mu x}$</h4><p>令 $y&#x3D;Q(x)e^{\mu x}$ ，代入得 $Q’’(x)+(2\mu+p)Q’(x)+(\mu ^2+p\mu+q)Q(x)&#x3D;P_m(x)$</p>
-<ol>
-<li>若 $\mu ^2+p\mu+q \neq 0$ ，$Q(x)$ 为 $m$ 次多项式；</li>
-<li>若 $\mu ^2+p\mu+q &#x3D; 0$ 但 $2\mu+p\neq 0$ ，$Q(x)$ 为 $m+1$ 次多项式；</li>
-<li>若 $\mu ^2+p\mu+q &#x3D; 0$ 且 $2\mu+p&#x3D; 0$ ，$Q(x)$ 为 $m+2$ 次多项式。</li>
-</ol>
-<h4 id="情况二-f-x-e-lambda-x-P-l-x-cos-omega-x-P-n-x-sin-omega-x"><a href="#情况二-f-x-e-lambda-x-P-l-x-cos-omega-x-P-n-x-sin-omega-x" class="headerlink" title="情况二 $f(x)&#x3D;e^{\lambda x}[P_l(x)\cos{\omega x}+P_n(x)\sin{\omega x}]$"></a>情况二 $f(x)&#x3D;e^{\lambda x}[P_l(x)\cos{\omega x}+P_n(x)\sin{\omega x}]$</h4><p>取 $m&#x3D;max{l,n}$ :</p>
-<ol>
-<li><p>若 $\lambda + i\omega$ 不是特征方程的根，特解<br>$$<br>y(x)&#x3D;e^{\lambda x}[R^{(1)}_m(x)\cos{\omega x} +R^{(2)}_m(x)\sin{\omega x}]<br>$$</p>
-</li>
-<li><p>若 $\lambda + i\omega$ 是特征方程的根，特解</p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>数学分析</tag>
-      </tags>
   </entry>
 </search>
