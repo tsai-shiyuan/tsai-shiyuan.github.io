@@ -16,9 +16,9 @@
 <p><code>print("hello, \"friend\"")</code> 转义也可以输出引号</p>
 <h4 id="函数参数"><a class="markdownIt-Anchor" href="#函数参数"></a> 函数参数</h4>
 <p>Default:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(*objects, sep=<span class="string">' '</span>, end=<span class="string">'\n'</span>, file=sys.stdout, flush=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(*objects, sep=<span class="hljs-string">' '</span>, end=<span class="hljs-string">'\n'</span>, file=sys.stdout, flush=<span class="hljs-literal">False</span>)<br></code></pre></td></tr></table></figure>
 <h4 id="字符串格式化"><a class="markdownIt-Anchor" href="#字符串格式化"></a> 字符串格式化</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f"hello, <span class="subst">{name}</span>"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">f"hello, <span class="hljs-subst">{name}</span>"</span>)<br></code></pre></td></tr></table></figure>
 <p>字符串前加上 <code>f</code></p>
 <h2 id="variables"><a class="markdownIt-Anchor" href="#variables"></a> variables</h2>
 <p><strong>store the returned values and do something</strong></p>
@@ -38,36 +38,36 @@
 <h4 id="范围"><a class="markdownIt-Anchor" href="#范围"></a> 范围</h4>
 <p>在python中，int类型可以无限大</p>
 <h4 id="加法"><a class="markdownIt-Anchor" href="#加法"></a> 加法</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">input</span>(<span class="string">"What's x? "</span>)</span><br><span class="line">y = <span class="built_in">input</span>(<span class="string">"What's y? "</span>)</span><br><span class="line">z = x + y</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">x = <span class="hljs-built_in">input</span>(<span class="hljs-string">"What's x? "</span>)<br>y = <span class="hljs-built_in">input</span>(<span class="hljs-string">"What's y? "</span>)<br>z = x + y<br><span class="hljs-built_in">print</span>(z)<br></code></pre></td></tr></table></figure>
 <p><code>+</code> 会把 <code>x</code> 字符串和 <code>y</code> 字符串连在一起，那何时做整数加法？修改：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">z = <span class="built_in">int</span>(x) + <span class="built_in">int</span>(y)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">z = <span class="hljs-built_in">int</span>(x) + <span class="hljs-built_in">int</span>(y)<br></code></pre></td></tr></table></figure>
 <p>由此观之，<code>int</code> 还是一个函数，把输入的字符串 <code>x</code> 变为可以运算的整数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's x? "</span>))</span><br><span class="line">y = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's y? "</span>))</span><br><span class="line"><span class="built_in">print</span>(x + y)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">x = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"What's x? "</span>))<br>y = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"What's y? "</span>))<br><span class="hljs-built_in">print</span>(x + y)<br></code></pre></td></tr></table></figure>
 <p><strong>内层函数的返回值(return value)会作为外层函数的参数(argument)</strong></p>
 <p>所以还可以这样写（但这样会增加阅读难度和犯错概率）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's x? "</span>)) + <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's y? "</span>)))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"What's x? "</span>)) + <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"What's y? "</span>)))<br></code></pre></td></tr></table></figure>
 <h3 id="float"><a class="markdownIt-Anchor" href="#float"></a> float</h3>
 <h4 id="四舍五入近似"><a class="markdownIt-Anchor" href="#四舍五入近似"></a> 四舍五入近似</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">round</span>(number[, ndigits])</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">round</span>(number[, ndigits])<br></code></pre></td></tr></table></figure>
 <p>保留成最近的整数，ndigits表示近似到几位</p>
 <p><code>[]</code> 括起来表示括号里面的内容是可以选择写或不写的</p>
 <h4 id="格式化输出小数位数"><a class="markdownIt-Anchor" href="#格式化输出小数位数"></a> 格式化输出：小数位数</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f"<span class="subst">{z:<span class="number">.2</span>f}</span>"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{z:<span class="hljs-number">.2</span>f}</span>"</span>)<br></code></pre></td></tr></table></figure>
 <h4 id="格式化输出每三位一个逗号"><a class="markdownIt-Anchor" href="#格式化输出每三位一个逗号"></a> 格式化输出：每三位一个逗号</h4>
 <p>想输出 <code>1,000,000</code> ？</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">f"<span class="subst">{z:,}</span>"</span>)</span><br></pre></td></tr></table></figure>
+ <figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">f"<span class="hljs-subst">{z:,}</span>"</span>)<br></code></pre></td></tr></table></figure>
 <h2 id="自定义函数"><a class="markdownIt-Anchor" href="#自定义函数"></a> 自定义函数</h2>
 <h3 id="def"><a class="markdownIt-Anchor" href="#def"></a> def</h3>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>():		<span class="comment">#()为空表示不接收参数</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello"</span>)		<span class="comment">#只要有四个缩进就是定义的函数的内容</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello</span>():		<span class="hljs-comment">#()为空表示不接收参数</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">"hello"</span>)		<span class="hljs-comment">#只要有四个缩进就是定义的函数的内容</span><br></code></pre></td></tr></table></figure>
 <p>一个sayhello程序</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">to=<span class="string">"world"</span></span>):	<span class="comment">#给参数一个默认值</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello,"</span>,to)</span><br><span class="line"></span><br><span class="line">hello()		<span class="comment">#没有参数argument，就会代入默认的world</span></span><br><span class="line">name = <span class="built_in">input</span>(<span class="string">"What's your name? "</span>).strip().title()</span><br><span class="line">hello(name)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello</span>(<span class="hljs-params">to=<span class="hljs-string">"world"</span></span>):	<span class="hljs-comment">#给参数一个默认值</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">"hello,"</span>,to)<br><br>hello()		<span class="hljs-comment">#没有参数argument，就会代入默认的world</span><br>name = <span class="hljs-built_in">input</span>(<span class="hljs-string">"What's your name? "</span>).strip().title()<br>hello(name)<br></code></pre></td></tr></table></figure>
 <h3 id="规范"><a class="markdownIt-Anchor" href="#规范"></a> 规范</h3>
 <p>先define，再call</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    name = <span class="built_in">input</span>(<span class="string">"What's your name? "</span>).strip().title()</span><br><span class="line">    hello(name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>(<span class="params">to=<span class="string">"world"</span></span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello,"</span>,to)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():<br>    name = <span class="hljs-built_in">input</span>(<span class="hljs-string">"What's your name? "</span>).strip().title()<br>    hello(name)<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello</span>(<span class="hljs-params">to=<span class="hljs-string">"world"</span></span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">"hello,"</span>,to)<br><br>main()<br></code></pre></td></tr></table></figure>
 <h3 id="scope作用范围"><a class="markdownIt-Anchor" href="#scope作用范围"></a> scope作用范围</h3>
 <p>变量在定义它的函数中起作用（和C差不多）</p>
 <h3 id="return返回值"><a class="markdownIt-Anchor" href="#return返回值"></a> return返回值</h3>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    x= <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">"What's x? "</span>))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"x squared is"</span>,square(x))</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">square</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">return</span> n * n</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():<br>    x= <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"What's x? "</span>))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">"x squared is"</span>,square(x))<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">square</span>(<span class="hljs-params">n</span>):<br>    <span class="hljs-keyword">return</span> n * n<br><br>main()<br></code></pre></td></tr></table></figure>
 <h4 id="ps-乘方运算"><a class="markdownIt-Anchor" href="#ps-乘方运算"></a> ps. 乘方运算</h4>
 <p>例如：计算 <code>n^2</code></p>
 <p><code>pow(n, 2)</code> 或 <code>n**2</code></p>
@@ -78,9 +78,9 @@
 <li>Posedocode: outline the program in advance(to-do list)</li>
 </ul>
 <p>单行注释：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ...comment</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># ...comment</span><br></code></pre></td></tr></table></figure>
 <p>多行注释：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">...comment</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-string">"""</span><br><span class="hljs-string">...comment</span><br><span class="hljs-string">"""</span><br></code></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>python</category>
@@ -95,16 +95,16 @@
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
 <h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
